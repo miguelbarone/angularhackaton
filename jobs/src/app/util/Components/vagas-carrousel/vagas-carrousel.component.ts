@@ -1,4 +1,4 @@
-import { VagaService } from './../Services/vaga.service';
+import { VagaService } from '../../Services/vaga.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

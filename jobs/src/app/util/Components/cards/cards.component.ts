@@ -1,4 +1,4 @@
-import { vagasModel } from './../vagasModel';
+import { vagasModel } from '../../vagasModel';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
