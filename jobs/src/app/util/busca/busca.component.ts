@@ -6,16 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./busca.component.css']
 })
 export class BuscaComponent implements OnInit {
-  opcao:string;
-  
+  tiposContrato: string[];
+  trampos: string[];
+  contratoSelecionado: string;
+  trampoSelecionado: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.tiposContrato = ['CLT', 'PJ'];
+    this.trampos = ['JAVA','Typescript'];
+    this.contratoSelecionado = null;
+    this.trampoSelecionado = null;
+
+
+   
   }
   
   
   mostra(){
-    console.log(this.opcao);
-  }
+    console.log(this.contratoSelecionado,this.trampoSelecionado);
+ }
 
 }
