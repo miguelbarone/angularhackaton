@@ -1,1 +1,33 @@
-<p>busca works!</p>
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                        <select class="form-control search-slt" id="tipoContrato" >
+                            <option>Tipo de contrato</option>
+                            <option>CLT</option>
+                            <option>PJ</option>
+                            <option>Estágio</option>
+                            <option>Trainee</option>
+                            <option>Freela</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="trampos" >
+                                <option>Trampos</option>
+                                <option>Java</option>
+                                <option>Python</option>
+                                <option>JS</option>
+                                <option>Ruby</option>
+                                <option>Flutter</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button (click)="mostra()" type="button" class="btn btn-danger wrn-btn">Pesquisar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>

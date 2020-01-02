@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./busca.component.css']
 })
 export class BuscaComponent implements OnInit {
-
+  opcao:string;
+  
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  
+  mostra(){
+    console.log(this.opcao);
   }
 
 }
