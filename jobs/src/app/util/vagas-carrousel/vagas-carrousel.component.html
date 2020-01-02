@@ -1,8 +1,9 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade w-50" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item" *ngFor="">
-            <app-cards (vaga)='vaga'></app-cards>
+        <div [ngClass]="{active: i === 0}" class="carousel-item" *ngFor="let vaga of vagaService.vagas; let i = index">
+            <app-cards [vagaModel]="vaga"></app-cards>
         </div>
+
     </div>
     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

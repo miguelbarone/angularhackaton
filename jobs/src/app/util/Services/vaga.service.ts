@@ -8,7 +8,7 @@ export class VagaService {
   constructor() {
     this.vagas[0] = {
       id: 1,
-      nome: "string",
+      nome: "C",
       empresa: "string",
       descricao: "string",
       salario: 1200,
@@ -17,7 +17,16 @@ export class VagaService {
     };
     this.vagas[1] = {
       id: 2,
-      nome: "string",
+      nome: "Java",
+      empresa: "string",
+      descricao: "string",
+      salario: 1200,
+      beneficios: "string",
+      requisitos: "string"
+    };
+    this.vagas[2] = {
+      id: 3,
+      nome: "Python",
       empresa: "string",
       descricao: "string",
       salario: 1200,

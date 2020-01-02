@@ -13,6 +13,6 @@ import { CardsComponent } from './cards/cards.component';
   imports: [
     CommonModule
   ],
-  exports:[HeaderComponent, FooterComponent, BuscaComponent, VagasCarrouselComponent]
+  exports:[HeaderComponent, FooterComponent, BuscaComponent, VagasCarrouselComponent,CardsComponent]
 })
 export class UtilModule { }
