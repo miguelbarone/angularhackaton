@@ -13,6 +13,16 @@
  - [ ] componente tela cadastro pf
  - [ ] componente tela pj
  
- ## Modulo Tela de perfil
-- [ ]  
+ ## Modulo Tela de perfil CPF
+- [ ]  Foto de perfil
+- [ ] Vagas que esta concorrendo
+- [ ] Curriculo
+- [ ] Edição de perfil
+
+
+ ## Modulo Tela de perfil CNPJ
+- [ ]  Foto de perfil
+- [ ] Vagas cadastradas
+- [ ] Edição de perfil
+- [ ] Curriculos recebidos
  
