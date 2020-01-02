@@ -11,6 +11,7 @@ import { VagasCarrouselComponent } from './vagas-carrousel/vagas-carrousel.compo
   declarations: [HeaderComponent, FooterComponent, BuscaComponent, VagasCarrouselComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[HeaderComponent, FooterComponent, BuscaComponent, VagasCarrouselComponent]
 })
 export class UtilModule { }
