@@ -8,6 +8,7 @@ import { CardsComponent } from './cards/cards.component';
 
 
 
+
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, BuscaComponent, VagasCarrouselComponent, CardsComponent],
   imports: [
