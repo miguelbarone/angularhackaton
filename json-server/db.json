@@ -5,7 +5,9 @@
             "empresa": 1,
             "descricao": "Atuar com desenvolvimento de aplicações com java 8",
             "requisitos": ["Sólida vivencia com Java", "HTML", "JSP", "Tomcat"],
-            "salario": "14.000"
+            "salario": "14.000",
+            "contrato": "CLT",
+            "linguagem": "Java"
         },
         {
             "id": 2,
@@ -13,7 +15,9 @@
             "empresa": 2,
             "descricao": "Atuar com desenvolvimento de aplicações frontend com JS",
             "requisitos": ["JS", "HTML", "Nodejs", "React"],
-            "salario": "7.000"
+            "salario": "7.000",
+            "contrato": "PJ",
+            "linguagem": "JS"
         },
         {
             "id": 3,
@@ -21,8 +25,21 @@
             "empresa": 1,
             "descricao": "Auxiliar todo time de TI da empresa oferecendo suporte técnico",
             "requisitos": ["HD", "RAM", "Gabinetes", "Manutenção"],
-            "salario": "3.000"
+            "salario": "3.000",
+            "contrato": "Trainee",
+            "linguagem": "helpDesk"
+        },
+        {
+            "id": 2,
+            "titulo": "Desenvolvedor Python pleno",
+            "empresa": 2,
+            "descricao": "Atuar com desenvolvimento de aplicações de IA com JS",
+            "requisitos": ["Python", "Panda", "IA"],
+            "salario": "1.000",
+            "contrato": "Estágio",
+            "linguagem": "Python"
         }
+
     ],
     "pfs": [{
             "id": 1,

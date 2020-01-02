@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { VagaModel } from 'src/app/store/vagas-model';
+import { StoreService } from 'src/app/store/store.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-busca',
@@ -6,26 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./busca.component.css']
 })
 export class BuscaComponent implements OnInit {
-  tiposContrato: string[];
-  trampos: string[];
-  contratoSelecionado: string;
-  trampoSelecionado: string;
+  
+  vagas: VagaModel[];
+  vaga: VagaModel;
 
-  constructor() { }
+  constructor(service: StoreService) { 
+
+   this.vagas =  service.vagas;
+  }
 
   ngOnInit() {
-    this.tiposContrato = ['CLT', 'PJ'];
-    this.trampos = ['JAVA','Typescript'];
-    this.contratoSelecionado = null;
-    this.trampoSelecionado = null;
 
-
+    
    
   }
   
-  
-  mostra(){
-    console.log(this.contratoSelecionado,this.trampoSelecionado);
- }
 
 }
