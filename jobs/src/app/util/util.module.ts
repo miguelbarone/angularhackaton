@@ -7,6 +7,7 @@ import { VagasCarrouselComponent } from './vagas-carrousel/vagas-carrousel.compo
 
 
 
+
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, BuscaComponent, VagasCarrouselComponent],
   imports: [
