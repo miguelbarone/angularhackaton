@@ -2,7 +2,7 @@
     "vagas": [{
             "id": 1,
             "titulo": "Vaga para desenvolvedor Java sênior",
-            "empresa": 1,
+            "empresa": "Iteris",
             "descricao": "Atuar com desenvolvimento de aplicações com java 8",
             "requisitos": ["Sólida vivencia com Java", "HTML", "JSP", "Tomcat"],
             "salario": "14.000",
@@ -12,7 +12,7 @@
         {
             "id": 2,
             "titulo": "Desenvolvedor JavaScript pleno",
-            "empresa": 2,
+            "empresa": "Google",
             "descricao": "Atuar com desenvolvimento de aplicações frontend com JS",
             "requisitos": ["JS", "HTML", "Nodejs", "React"],
             "salario": "7.000",
@@ -22,7 +22,7 @@
         {
             "id": 3,
             "titulo": "Vaga para helpdesk",
-            "empresa": 1,
+            "empresa": "Iteris",
             "descricao": "Auxiliar todo time de TI da empresa oferecendo suporte técnico",
             "requisitos": ["HD", "RAM", "Gabinetes", "Manutenção"],
             "salario": "3.000",
@@ -30,9 +30,9 @@
             "linguagem": "helpDesk"
         },
         {
-            "id": 2,
+            "id": 4,
             "titulo": "Desenvolvedor Python pleno",
-            "empresa": 2,
+            "empresa": "Facebook",
             "descricao": "Atuar com desenvolvimento de aplicações de IA com JS",
             "requisitos": ["Python", "Panda", "IA"],
             "salario": "1.000",
@@ -89,7 +89,7 @@
             "nome": "Facebook",
             "email": "f",
             "senha": "1",
-            "vagas": [],
+            "vagas": [4],
             "foto": "https://www.facebook.com/images/fb_icon_325x325.png",
             "slogan": "Facezão, vem perder tempo com a gente!"
         }

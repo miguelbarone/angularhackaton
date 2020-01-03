@@ -9,6 +9,9 @@ import { VagaModel } from './vagas-model';
 })
 export class StoreService implements OnInit {
   
+  //essa propriedade indica pra toda aplicação se existe ou não um usuario autenticado ativo
+  usuarioLogado: boolean = false;
+
   usuario: PfModel;
   vaga: VagaModel;
   pfs: Array<PfModel> = [];
