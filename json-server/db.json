@@ -8,7 +8,7 @@
             "salario": "14.000",
             "contrato": "CLT",
             "linguagem": "Java",
-            "foto": "",
+            "foto": "https://image.flaticon.com/icons/svg/210/210311.svg",
             "beneficio": ""
         },
         {
@@ -20,7 +20,7 @@
             "salario": "7.000",
             "contrato": "PJ",
             "linguagem": "JS",
-            "foto": "",
+            "foto": "https://image.flaticon.com/icons/svg/136/136530.svg",
             "beneficio": ""
         },
         {
@@ -32,7 +32,7 @@
             "salario": "3.000",
             "contrato": "Trainee",
             "linguagem": "helpDesk",
-            "foto": "",
+            "foto": "https://image.flaticon.com/icons/svg/900/900272.svg",
             "beneficio": ""
         },
         {
@@ -44,7 +44,7 @@
             "salario": "1.000",
             "contrato": "Estágio",
             "linguagem": "Python",
-            "foto": "",
+            "foto": "https://image.flaticon.com/icons/svg/1822/1822899.svg",
             "beneficio": ""
         }
 

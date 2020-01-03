@@ -2,14 +2,14 @@
 
 
 ## Módulo útil 
-- [ ] comp header
- - [ ] comp footer
- - [ ] comp busca
-- [ ] comp vagas-carrousel
+- [x] comp header
+ - [x] comp footer
+ - [x] comp busca
+- [x] comp vagas-carrousel
 
  ## Modular json
-- [ ] modulo de login
- - [ ] componente tela de login
+- [x] modulo de login
+ - [x] componente tela de login
  - [ ] componente tela cadastro pf
  - [ ] componente tela pj
  
