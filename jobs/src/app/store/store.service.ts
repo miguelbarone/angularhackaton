@@ -45,4 +45,8 @@ export class StoreService implements OnInit {
       })
     });
   }
+  //adicionar usuario Pf
+      addPf(user: PfModel): Observable<any> {
+     return this.http.post("http://localhost:3000/pfs",user)
+  }
 }

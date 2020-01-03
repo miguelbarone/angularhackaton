@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from 'src/app/vagas/search.service';
 
 @Component({
   selector: 'app-login',

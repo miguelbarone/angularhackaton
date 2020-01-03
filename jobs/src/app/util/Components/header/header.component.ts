@@ -50,4 +50,8 @@ encerrarSessao(){
   this.router.navigate(['']);
 }
 
+clickCadastrar(){
+  this.router.navigate(['cadastro']);
+}
+
 }

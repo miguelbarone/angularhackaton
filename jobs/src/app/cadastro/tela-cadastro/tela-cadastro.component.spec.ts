@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BuscaComponent } from './busca.component';
+import { TelaCadastroComponent } from './tela-cadastro.component';
 
-describe('BuscaComponent', () => {
-  let component: BuscaComponent;
-  let fixture: ComponentFixture<BuscaComponent>;
+describe('TelaCadastroComponent', () => {
+  let component: TelaCadastroComponent;
+  let fixture: ComponentFixture<TelaCadastroComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BuscaComponent ]
+      declarations: [ TelaCadastroComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BuscaComponent);
+    fixture = TestBed.createComponent(TelaCadastroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
