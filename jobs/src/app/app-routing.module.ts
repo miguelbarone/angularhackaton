@@ -9,8 +9,7 @@ import { VagaInfoComponent } from './vagas/vaga-info/vaga-info.component';
 
 
 const routes: Routes = [
-  // {path: '', component: LoginComponent, canActivate: [GuardaDeslogadorService]},
-   {path: '', component: UserContainerComponent},
+  {path: '', component: LoginComponent, canActivate: [GuardaDeslogadorService]},
   {path: 'vagas', component: VagasListComponent, canActivate: [GuardasService]},
   {path: 'vaga-info', component: VagaInfoComponent}
 ];
