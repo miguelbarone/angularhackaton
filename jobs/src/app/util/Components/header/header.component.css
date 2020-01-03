@@ -1,20 +1,29 @@
-.navbar-brand img{
-    max-width:150px;
-    max-height:100px;
+.navbar-brand img {
+    max-width: 150px;
+    max-height: 100px;
     width: auto;
     height: auto;
 }
-#navbarSupportedContent a{
+
+#navbarSupportedContent a {
     font-size: 25px;
     margin-left: 20px;
 }
-.form-group{
+
+.form-group {
     display: flex;
     justify-content: center;
 }
-.btn{
+
+.btn {
     background-color: rgb(245, 67, 67);
     box-shadow: black 1px 1px;
     margin-right: 10px;
     color: blanchedalmond;
+}
+
+img {
+    max-width: 10%;
+    max-height: 50%;
+    border-radius: 100px;
 }
