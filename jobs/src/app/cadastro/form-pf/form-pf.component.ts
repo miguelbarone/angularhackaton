@@ -35,7 +35,7 @@ export class FormPfComponent implements OnInit {
     novoUsuario.candidaturas = [];
 
     this.store.addPf(novoUsuario).subscribe(res =>{
-      alert("vsf mlk");
+      alert("Cadastro concluído!");
       this.router.navigate(['']);
     })
       
