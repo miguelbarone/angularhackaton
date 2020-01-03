@@ -1,3 +1,4 @@
+import { UserPerfilModule } from './user-perfil/user-perfil.module';
 import { UtilModule } from './util/util.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -19,7 +20,8 @@ import { InicioModule } from './inicio/inicio.module';
     UtilModule,
     HttpClientModule,
     VagasModule,
-    InicioModule
+    InicioModule,
+    UserPerfilModule
   ],
   providers: [],
   bootstrap: [AppComponent]
