@@ -1,0 +1,12 @@
+#tela-perfil {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+app-user-edit-form {
+    width: 80%;
+    margin-left: 5%;
+}
