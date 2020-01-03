@@ -1,19 +1,17 @@
 <div id="content">
-  <app-header></app-header>
-  <ul class="list-unstyled lista-vagas">
-      <li (click)="vs.abrirVaga(vaga)" class="media" *ngFor="let vaga of store.vagas">
-          <div class="card mb-3" style="width: 100%;">
-              <div class="row no-gutters">
-                <div class="col-md-8" style="width: 100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">{{ vaga.titulo }}</h5>
-                    <p class="card-text">{{ vaga.descricao }}</p>
-                    <p class="card-text"><small class="text-muted">{{ vaga.empresa }}</small></p>
-                  </div>
+    <ul class="list-unstyled lista-vagas">
+        <li (click)="vs.abrirVaga(vaga)" class="media" *ngFor="let vaga of store.vagas">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-8" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ vaga.titulo }}</h5>
+                            <p class="card-text">{{ vaga.descricao }}</p>
+                            <p class="card-text"><small class="text-muted">{{ vaga.empresa }}</small></p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-      </li>
+        </li>
     </ul>
-  </div>
-  <app-footer></app-footer>
+</div>
