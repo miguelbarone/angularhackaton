@@ -49,4 +49,10 @@ export class StoreService implements OnInit {
       addPf(user: PfModel): Observable<any> {
      return this.http.post("http://localhost:3000/pfs",user)
   }
+
+  atualizarPf(atualizacao: PfModel, id): Observable<PfModel>{
+    return this.http.put<PfModel>("http://localhost:3000/pfs/" + id, atualizacao);
+  }
+
+
 }

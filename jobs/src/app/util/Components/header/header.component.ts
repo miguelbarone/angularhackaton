@@ -47,6 +47,7 @@ export class HeaderComponent implements OnInit {
 
 encerrarSessao(){
   this.store.usuarioLogado = false;
+  this.store.usuario = new PfModel();
   this.router.navigate(['']);
 }
 

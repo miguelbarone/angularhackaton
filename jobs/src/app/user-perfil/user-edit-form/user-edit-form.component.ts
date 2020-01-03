@@ -35,6 +35,11 @@ export class UserEditFormComponent implements OnInit {
     atualizacao.candidaturas = this.store.usuario.candidaturas;
 
     this.store.usuario = atualizacao;
+    
+    this.store.atualizarPf(atualizacao, id).subscribe(res => {
+      alert("Usuario atualizado");
+      this.store.buscarPfs();
+    });
   }
 
 }
