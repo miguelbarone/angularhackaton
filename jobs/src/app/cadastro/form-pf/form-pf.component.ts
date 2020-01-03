@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { PfModel } from 'src/app/store/pf-model';
 
 @Component({
   selector: 'app-form-pf',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormPfComponent implements OnInit {
 
-  constructor() { }
+  formPf: FormGroup;
+
+  constructor(private fb: FormBuilder, private router: Router) { }
 
   ngOnInit() {
+    this.formPf = this.fb.group({
+      nome: ['', Validators.required],
+      email: ['', Validators.required],
+      senha: ['', Validators.required],
+      foto: ['', Validators.required],
+      sobre: ['', Validators.required]
+  })
   }
+
+  cadastrar(){
+    let novoUsuario = new PfModel();
+    novoUsuario.nome = this.formPf.get("nome").value;
+    novoUsuario.email = this.formPf.get("email").value;
+    novoUsuario.senha = this.formPf.get("senha").value;
+    novoUsuario.foto = this.formPf.get("foto").value;
+    novoUsuario.sobre = this.formPf.get("sobre").value;
+    novoUsuario.candidaturas = [];
+
+  }
+
 
 }

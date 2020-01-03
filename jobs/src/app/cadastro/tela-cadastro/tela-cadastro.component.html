@@ -1,1 +1,22 @@
-<p>tela-cadastro works!</p>
+<section>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pessoa-tab" data-toggle="tab" href="#pessoa" role="tab" aria-controls="pessoa" aria-selected="true">Cadastro pessoa fisica</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="empresa-tab" data-toggle="tab" href="#empresa" role="tab" aria-controls="empresa" aria-selected="false">Cadastro pessoa juridica</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="pessoa" role="tabpanel" aria-labelledby="pessoa-tab">
+
+            <app-form-pf></app-form-pf>
+
+        </div>
+        <div class="tab-pane fade" id="empresa" role="tabpanel" aria-labelledby="empresa-tab">
+
+            <app-form-pj></app-form-pj>
+
+        </div>
+    </div>
+</section>
