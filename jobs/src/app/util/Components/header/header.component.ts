@@ -51,7 +51,6 @@ encerrarSessao(){
 }
 
 clickCadastrar(){
-  alert("ok")
   this.router.navigate(['cadastro']);
 }
 

@@ -7,8 +7,6 @@ import { UtilModule } from '../util/util.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
-
 @NgModule({
   declarations: [TelaCadastroComponent, FormPfComponent, FormPjComponent],
   imports: [
