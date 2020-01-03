@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from 'src/app/store/store.service';
 import { VagaService } from "../../Services/vaga.service";
+import { VagaModel } from 'src/app/store/vagas-model';
 
 @Component({
   selector: 'app-vagas-list',
@@ -9,7 +10,12 @@ import { VagaService } from "../../Services/vaga.service";
 })
 export class VagasListComponent implements OnInit {
 
-  constructor(private store: StoreService, private vs: VagaService) { }
+  vagas: VagaModel[];
+  vaga: VagaModel;
+
+  constructor(private store: StoreService, private vs: VagaService) { 
+    this.vagas = store.vagas;
+  }
 
   ngOnInit() {
   }

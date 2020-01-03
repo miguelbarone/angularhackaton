@@ -1,3 +1,29 @@
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                        <select class="form-control search-slt" id="tipoContrato">
+                        <option disabled>Selecione</option>
+                        <option *ngFor="let vaga of vagas">{{vaga.contrato}}</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                        <select class="form-control search-slt" id="trampos">
+                            <option disabled>Selecione</option>
+                                <option *ngFor="let vaga of vagas">{{vaga.linguagem}}</option>
+                            </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                        <button type="button" class="btn btn-danger wrn-btn">Pesquisar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
 <div id="content">
     <ul class="list-unstyled lista-vagas">
         <li (click)="vs.abrirVaga(vaga)" class="media" *ngFor="let vaga of store.vagas">
