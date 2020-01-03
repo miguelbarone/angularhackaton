@@ -1,7 +1,14 @@
-<div class="card">
+<div class="card text-center" style="width: 18rem;">
+    <img src="{{vagaModel.foto}}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">{{vagaModel.nome}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{vagaModel.empresa}}</h6>
-        <p class="card-text">{{vagaModel.descricao}}</p>
-        <a href="#" class="btn btn-primary">Inscrever</a>
+        <h5 class="card-title">{{vagaModel.titulo}}</h5>
+        <p class="card-subtitle">{{vagaModel.empresa}}</p>
     </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"></li>
+        <li class="list-group-item">{{vagaModel.descricao}}</li>
+    </ul>
+    <div class="card-body">
+        <a (click)="vagaService.abrirVaga(vagaModel)" class="btn btn-primary">Inscrever</a>
+    </div>
+</div>

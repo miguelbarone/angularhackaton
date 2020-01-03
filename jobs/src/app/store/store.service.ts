@@ -8,7 +8,7 @@ import { VagaModel } from './vagas-model';
   providedIn: 'root'
 })
 export class StoreService implements OnInit {
-  
+
   //essa propriedade indica pra toda aplicação se existe ou não um usuario autenticado ativo
   usuarioLogado: boolean = false;
 
@@ -16,13 +16,13 @@ export class StoreService implements OnInit {
   vaga: VagaModel;
   pfs: Array<PfModel> = [];
   vagas: Array<VagaModel> = [];
-  
+
   constructor(private http: HttpClient) {
     this.buscarPfs();
     this.buscarVagas();
   }
-  
-  
+
+
   ngOnInit(): void {
   }
 
@@ -33,7 +33,6 @@ export class StoreService implements OnInit {
       res.forEach(pf => {
         this.pfs.push(pf);
       })
-      console.log(this.pfs);
     });
   }
 
@@ -44,7 +43,6 @@ export class StoreService implements OnInit {
       res.forEach(vaga => {
         this.vagas.push(vaga);
       })
-      console.log(this.vaga);
     });
   }
 }

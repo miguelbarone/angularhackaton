@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vagas-carrousel.component.css']
 })
 export class VagasCarrouselComponent implements OnInit {
-  vagaService:VagaService;
-  constructor() { }
+
+  constructor(private vagaService:VagaService) {
+  }
 
   ngOnInit() {
 

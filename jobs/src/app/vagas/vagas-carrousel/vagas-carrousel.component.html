@@ -1,15 +1,14 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade w-50" data-ride="carousel">
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        <div [ngClass]="{active: i === 0}" class="carousel-item" *ngFor="let vaga of vagaService.vagas; let i = index">
+        <div [ngClass]="{active: i === 0}" class="carousel-item" *ngFor="let vaga of vagaService.vagas; let i = index" data-interval="5000">
             <app-cards [vagaModel]="vaga"></app-cards>
         </div>
-
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>

@@ -7,5 +7,7 @@ export class VagaModel {
     public salario;
     public contrato;
     public linguagem;
+    public beneficio;
+    public foto;
 }
 
