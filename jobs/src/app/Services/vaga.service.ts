@@ -14,6 +14,7 @@ export class VagaService {
   vagaClicada: VagaModel;
 
   abrirVaga(vaga) {
+
     this.vagaClicada = vaga;
     this.router.navigate(['vaga-info']);
   }

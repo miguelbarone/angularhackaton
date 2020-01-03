@@ -7,7 +7,9 @@
             "requisitos": ["Sólida vivencia com Java", "HTML", "JSP", "Tomcat"],
             "salario": "14.000",
             "contrato": "CLT",
-            "linguagem": "Java"
+            "linguagem": "Java",
+            "foto": "",
+            "beneficio": ""
         },
         {
             "id": 2,
@@ -18,7 +20,8 @@
             "salario": "7.000",
             "contrato": "PJ",
             "linguagem": "JS",
-            "foto": ""
+            "foto": "",
+            "beneficio": ""
         },
         {
             "id": 3,
@@ -29,7 +32,8 @@
             "salario": "3.000",
             "contrato": "Trainee",
             "linguagem": "helpDesk",
-            "foto": ""
+            "foto": "",
+            "beneficio": ""
         },
         {
             "id": 4,
@@ -40,7 +44,8 @@
             "salario": "1.000",
             "contrato": "Estágio",
             "linguagem": "Python",
-            "foto": ""
+            "foto": "",
+            "beneficio": ""
         }
 
     ],
