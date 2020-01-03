@@ -1,5 +1,6 @@
 import { VagaService } from '../../Services/vaga.service';
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from '../search.service';
 
 @Component({
   selector: 'app-vagas-carrousel',
