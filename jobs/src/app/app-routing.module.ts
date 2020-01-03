@@ -1,3 +1,4 @@
+import { UserContainerComponent } from './user-perfil/user-container/user-container.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { VagasListComponent } from './vagas/vagas-list/vagas-list.component';

@@ -1,3 +1,4 @@
+import { UserPerfilModule } from './user-perfil/user-perfil.module';
 import { UtilModule } from './util/util.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,7 +22,9 @@ import { CadastroModule } from './cadastro/cadastro.module';
     HttpClientModule,
     VagasModule,
     InicioModule,
+    UserPerfilModule,
     CadastroModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

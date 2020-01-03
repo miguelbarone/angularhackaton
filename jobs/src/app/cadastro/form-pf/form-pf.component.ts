@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PfModel } from 'src/app/store/pf-model';
+import { StoreService } from 'src/app/store/store.service';
 
 @Component({
   selector: 'app-form-pf',
@@ -12,7 +13,7 @@ export class FormPfComponent implements OnInit {
 
   formPf: FormGroup;
 
-  constructor(private fb: FormBuilder, private router: Router) { }
+  constructor(private fb: FormBuilder, private router: Router, private store: StoreService) { }
 
   ngOnInit() {
     this.formPf = this.fb.group({
@@ -33,7 +34,13 @@ export class FormPfComponent implements OnInit {
     novoUsuario.sobre = this.formPf.get("sobre").value;
     novoUsuario.candidaturas = [];
 
+    this.store.addPf(novoUsuario).subscribe(res =>{
+      alert("Cadastro concluído!");
+      this.router.navigate(['']);
+    })
+      
   }
+  
 
 
 }
