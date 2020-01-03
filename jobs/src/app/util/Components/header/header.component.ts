@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StoreService } from 'src/app/store/store.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { PfModel } from 'src/app/store/pf-model';
 
 @Component({
   selector: 'app-header',
@@ -11,8 +12,11 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   loginForm: FormGroup;
+  usuario: PfModel;
 
-  constructor(private store: StoreService, private fb: FormBuilder, private router: Router) { }
+  constructor(private store: StoreService, private fb: FormBuilder, private router: Router) { 
+    this.usuario = store.usuario;
+  }
 
   ngOnInit() {
     this.loginForm = this.fb.group({
@@ -29,8 +33,8 @@ export class HeaderComponent implements OnInit {
 
     this.store.pfs.forEach(pf => {
       if(email == pf.email && senha == pf.senha){
-        this.store.usuarioLogado = true;
         this.store.usuario = pf;
+        this.store.usuarioLogado = true;
         this.router.navigate(['vagas']);
       }
     })
@@ -40,4 +44,10 @@ export class HeaderComponent implements OnInit {
       alert("dados incorretos")
     }
   }
+
+encerrarSessao(){
+  this.store.usuarioLogado = false;
+  this.router.navigate(['']);
+}
+
 }
