@@ -5,22 +5,12 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                         <select class="form-control search-slt" id="tipoContrato">
-                            <option>Tipo de contrato</option>
-                            <option >CLT</option >
-                            <option>PJ</option>
-                            <option>Estágio</option>
-                            <option>Trainee</option>
-                            <option>Freela</option>
+                        <option *ngFor="let vaga of vagas">{{vaga.contrato}}</option>
                         </select>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                             <select class="form-control search-slt" id="trampos" >
-                                <option>Trampos</option>
-                                <option>Java</option>
-                                <option>Python</option>
-                                <option>JS</option>
-                                <option>Ruby</option>
-                                <option>Flutter</option>
+                                <option *ngFor="let vaga of vagas">{{vaga.linguagem}}</option>
                             </select>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">

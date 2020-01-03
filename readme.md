@@ -25,4 +25,7 @@
 - [ ] Vagas cadastradas
 - [ ] Edição de perfil
 - [ ] Curriculos recebidos
+
+
+## Lembrete: Adicionar o campo 'tipo de contrato (estágio, CLT, PJ, Freela, Trainee)' no json de vagas 
  
