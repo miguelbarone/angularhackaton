@@ -1,3 +1,4 @@
+import { UserContainerComponent } from './user-perfil/user-container/user-container.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { VagasListComponent } from './vagas/vagas-list/vagas-list.component';
@@ -8,7 +9,8 @@ import { VagaInfoComponent } from './vagas/vaga-info/vaga-info.component';
 
 
 const routes: Routes = [
-  {path: '', component: LoginComponent, canActivate: [GuardaDeslogadorService]},
+  // {path: '', component: LoginComponent, canActivate: [GuardaDeslogadorService]},
+   {path: '', component: UserContainerComponent},
   {path: 'vagas', component: VagasListComponent, canActivate: [GuardasService]},
   {path: 'vaga-info', component: VagaInfoComponent}
 ];
