@@ -36,6 +36,7 @@ export class FormPfComponent implements OnInit {
 
     this.store.addPf(novoUsuario).subscribe(res =>{
       alert("Cadastro concluído!");
+      this.store.buscarPfs();
       this.router.navigate(['']);
     })
       
