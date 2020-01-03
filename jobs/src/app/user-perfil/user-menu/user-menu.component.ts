@@ -6,12 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-menu.component.css']
 })
 export class UserMenuComponent implements OnInit {
-  menuList = {
-    "Editar Perfil": "#",
-    "Candidatura": "#"
-
-  }
-  constructor() { }
+ menuList = [{"nome":"Editar Perfil","link":"#"},{"nome":"Candidatura","link":"#"},{"nome":"Dicas","link":"#"},]
+  constructor() {
+   }
 
   ngOnInit() {
   }
