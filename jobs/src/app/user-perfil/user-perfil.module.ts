@@ -1,4 +1,4 @@
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserEditFormComponent } from './user-edit-form/user-edit-form.component';
@@ -12,7 +12,8 @@ import { UserContainerComponent } from './user-container/user-container.componen
   declarations: [UserEditFormComponent, CandidaturasComponent, UserMenuComponent, UserContainerComponent],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [UserEditFormComponent, CandidaturasComponent, UserMenuComponent, UserContainerComponent],
 })

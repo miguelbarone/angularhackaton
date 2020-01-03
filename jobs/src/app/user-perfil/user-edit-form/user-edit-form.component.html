@@ -1,1 +1,30 @@
-<p>user-edit-form works!</p>
+<section class="form-perfil-wrapper">
+    <form [formGroup]="formEdicao" (submit)="atualizar()">
+        <div class="form-group">
+            <label>Nome</label>
+            <input formControlName="nome" type="text" class="form-control" aria-describedby="emailHelp">
+            <small *ngIf="formEdicao.get('nome').errors?.required" class="text-danger form-text text-muted">Campo obrigatório</small>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp">
+            <small *ngIf="formEdicao.get('email').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+        </div>
+        <div class="form-group">
+            <label>Senha</label>
+            <input formControlName="senha" type="password" class="form-control" aria-describedby="emailHelp">
+            <small *ngIf="formEdicao.get('senha').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+        </div>
+        <div class="form-group">
+            <label>Foto</label>
+            <input formControlName="foto" type="text" class="form-control" aria-describedby="emailHelp">
+            <small *ngIf="formEdicao.get('foto').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+        </div>
+        <div class="form-group">
+            <label>Sobre</label>
+            <input formControlName="sobre" type="text" class="form-control" aria-describedby="emailHelp">
+            <small *ngIf="formEdicao.get('sobre').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+        </div>
+        <button type="submit" [disabled]="formEdicao.invalid" class="btn btn-primary">Atualizar</button>
+    </form>
+</section>

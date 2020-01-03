@@ -1,20 +1,15 @@
 <section>
-    <div class="sideNav">
-        <ul>
-
-            <a href="#">
-                <li class="item">Editar Perfil</li>
-            </a>
-
-            <a href="#">
-                <li class="item">Candidatura</li>
-            </a>
-
-
-            <a href="#">
-                <li class="item">Dicas</li>
-            </a>
-
-        </ul>
-    </div>
-</section>
+    <div class="section-wrapper">
+        <section class="perfil-wrapper">
+            <div class="card" style="width: 18rem;">
+                <img [src]="store.usuario.foto" class=" card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">{{ store.usuario.nome }}</h5>
+                    <p class="card-text ">{{ store.usuario.sobre }}</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item ">Email: {{ store.usuario.email }}</li>
+                    <li class="list-group-item " style="cursor: pointer">Minhas candidaturas</li>
+                </ul>
+            </div>
+        </section>
