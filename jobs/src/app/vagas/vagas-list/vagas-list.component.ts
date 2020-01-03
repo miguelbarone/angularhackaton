@@ -19,7 +19,7 @@ export class VagasListComponent implements OnInit {
   tecnologia:string = "";
 
   constructor(private store: StoreService, private vs: VagaService, private ss: SearchService) { 
-    this.vagas = store.vagas;
+    
   }
 
   ngOnInit() {

@@ -20,6 +20,6 @@
             <input formControlName="telefone" type="text" class="form-control" aria-describedby="emailHelp">
             <small *ngIf="formPj.get('telefone').errors?.required" class="form-text text-muted">Campo obrigatório</small>
         </div>
-        <button (click)="cadastrar()" type="submit" [disabled]="formPj.invalid" class="btn btn-primary">Cadastrar</button>
+        <button id="cadastrar" (click)="cadastrar()" type="submit" [disabled]="formPj.invalid" class="btn btn-primary">Cadastrar</button>
     </form>
 </section>
