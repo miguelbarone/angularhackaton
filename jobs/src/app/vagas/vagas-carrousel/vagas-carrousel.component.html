@@ -1,6 +1,6 @@
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        <div [ngClass]="{active: i === 0}" class="carousel-item" *ngFor="let vaga of vagaService.vagas; let i = index" data-interval="10000">
+        <div [ngClass]="{active: i === 0}" class="carousel-item" *ngFor="let vaga of vagaService.vagas; let i = index" data-interval="5000">
             <app-cards [vagaModel]="vaga"></app-cards>
         </div>
     </div>
