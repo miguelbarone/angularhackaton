@@ -13,7 +13,8 @@ const routes: Routes = [
   {path: '', component: LoginComponent, canActivate: [GuardaDeslogadorService]},
   {path: 'vagas', component: VagasListComponent, canActivate: [GuardasService]},
   {path: 'vaga-info', component: VagaInfoComponent},
-  {path: 'cadastro', component: TelaCadastroComponent}
+  {path: 'cadastro', component: TelaCadastroComponent},
+  {path: 'perfil', component: UserContainerComponent, canActivate: [GuardasService]}
 ];
 
 @NgModule({
