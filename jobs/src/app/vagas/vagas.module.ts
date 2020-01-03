@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { UtilModule } from '../util/util.module';
 import { VagaInfoComponent } from './vaga-info/vaga-info.component';
 import { FormsModule } from '@angular/forms';
+import { UserPerfilModule } from '../user-perfil/user-perfil.module';
 
 @NgModule({
   declarations: [VagasListComponent, VagaInfoComponent,VagasCarrouselComponent],
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     RouterModule,
     UtilModule,
-    FormsModule
+    FormsModule,
+    UserPerfilModule
   ],
   exports: [VagasListComponent, VagaInfoComponent,VagasCarrouselComponent]
 })
