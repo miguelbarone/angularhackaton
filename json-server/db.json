@@ -1,142 +1,139 @@
 {
-  "vagas": [
-    {
-      "id": 1,
-      "titulo": "Vaga para desenvolvedor Java sênior",
-      "empresa": "Iteris",
-      "descricao": "Atuar com desenvolvimento de aplicações com java 8",
-      "requisitos": [
-        "Sólida vivencia com Java",
-        "HTML",
-        "JSP",
-        "Tomcat"
-      ],
-      "salario": "14.000",
-      "contrato": "CLT",
-      "linguagem": "Java",
-      "foto": "https://image.flaticon.com/icons/svg/210/210311.svg",
-      "beneficio": ""
-    },
-    {
-      "id": 2,
-      "titulo": "Desenvolvedor JavaScript pleno",
-      "empresa": "Google",
-      "descricao": "Atuar com desenvolvimento de aplicações frontend com JS",
-      "requisitos": [
-        "JS",
-        "HTML",
-        "Nodejs",
-        "React"
-      ],
-      "salario": "7.000",
-      "contrato": "PJ",
-      "linguagem": "JS",
-      "foto": "https://image.flaticon.com/icons/svg/136/136530.svg",
-      "beneficio": ""
-    },
-    {
-      "id": 3,
-      "titulo": "Vaga para helpdesk",
-      "empresa": "Iteris",
-      "descricao": "Auxiliar todo time de TI da empresa oferecendo suporte técnico",
-      "requisitos": [
-        "HD",
-        "RAM",
-        "Gabinetes",
-        "Manutenção"
-      ],
-      "salario": "3.000",
-      "contrato": "Trainee",
-      "linguagem": "helpDesk",
-      "foto": "https://image.flaticon.com/icons/svg/900/900272.svg",
-      "beneficio": ""
-    },
-    {
-      "id": 4,
-      "titulo": "Desenvolvedor Python pleno",
-      "empresa": "Facebook",
-      "descricao": "Atuar com desenvolvimento de aplicações de IA com JS",
-      "requisitos": [
-        "Python",
-        "Panda",
-        "IA"
-      ],
-      "salario": "1.000",
-      "contrato": "Estágio",
-      "linguagem": "Python",
-      "foto": "https://image.flaticon.com/icons/svg/1822/1822899.svg",
-      "beneficio": ""
-    }
-  ],
-  "pfs": [
-    {
-      "id": 1,
-      "nome": "Rafael Amorim",
-      "email": "rafa",
-      "senha": 1,
-      "foto": "http://horadobico.com/wp-content/uploads/2014/06/chimbinha.jpg",
-      "candidaturas": [],
-      "sobre": "Profissional com muita experiencia em varias coisas"
-    },
-    {
-      "id": 2,
-      "nome": "Luiz do Quatar",
-      "email": "l",
-      "senha": 1,
-      "foto": "http://pm1.narvii.com/6270/2423d68171a91d41a4ef446581c171b37a131d3a_00.jpg",
-      "candidaturas": [],
-      "sobre": "Esse cara sabe muito de várias coisas"
-    },
-    {
-      "id": 3,
-      "nome": "Douglas Horh",
-      "email": "d",
-      "senha": 1,
-      "foto": "https://img.quizur.com/f/img5e095859037646.91452497.png?lastEdited=1577670783",
-      "candidaturas": [],
-      "sobre": "Fã do Felipe Neto sabe muito de JS e gosta de assitir vingadores pelado"
-    },
-    {
-      "candidaturas": [],
-      "nome": "curupira",
-      "email": "cu",
-      "senha": "1",
-      "foto": "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/protetor-da-floresta.jpg",
-      "sobre": "asdasdasdasdasdasdasdasd",
-      "id": 4
-    }
-  ],
-  "pjs": [
-    {
-      "nome": "Iteris",
-      "email": "i",
-      "senha": "1",
-      "vagas": [
-        1,
-        3
-      ],
-      "foto": "https://media.licdn.com/dms/image/C4E0BAQE6hGy74ohx8w/company-logo_200_200/0?e=2159024400&v=beta&t=TDGWuPEU5Y5l0kf62R0OVwldw67aoHo7Te5hJg__PlQ",
-      "slogan": "a softaware company"
-    },
-    {
-      "nome": "Google",
-      "email": "g",
-      "senha": "1",
-      "vagas": [
-        2
-      ],
-      "foto": "https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png",
-      "slogan": "Google é brabo, pergunta aqui que a gente sabe"
-    },
-    {
-      "nome": "Facebook",
-      "email": "f",
-      "senha": "1",
-      "vagas": [
-        4
-      ],
-      "foto": "https://www.facebook.com/images/fb_icon_325x325.png",
-      "slogan": "Facezão, vem perder tempo com a gente!"
-    }
-  ]
+    "vagas": [{
+            "id": 1,
+            "titulo": "Vaga para desenvolvedor Java sênior",
+            "empresa": "Iteris",
+            "descricao": "Atuar com desenvolvimento de aplicações com java 8",
+            "requisitos": [
+                "Sólida vivencia com Java",
+                "HTML",
+                "JSP",
+                "Tomcat"
+            ],
+            "salario": "14.000",
+            "contrato": "CLT",
+            "linguagem": "Java",
+            "foto": "https://image.flaticon.com/icons/svg/210/210311.svg",
+            "beneficio": ""
+        },
+        {
+            "id": 2,
+            "titulo": "Desenvolvedor JavaScript pleno",
+            "empresa": "Google",
+            "descricao": "Atuar com desenvolvimento de aplicações frontend com JS",
+            "requisitos": [
+                "JS",
+                "HTML",
+                "Nodejs",
+                "React"
+            ],
+            "salario": "7.000",
+            "contrato": "PJ",
+            "linguagem": "JS",
+            "foto": "https://image.flaticon.com/icons/svg/136/136530.svg",
+            "beneficio": ""
+        },
+        {
+            "id": 3,
+            "titulo": "Vaga para helpdesk",
+            "empresa": "Iteris",
+            "descricao": "Auxiliar todo time de TI da empresa oferecendo suporte técnico",
+            "requisitos": [
+                "HD",
+                "RAM",
+                "Gabinetes",
+                "Manutenção"
+            ],
+            "salario": "3.000",
+            "contrato": "Trainee",
+            "linguagem": "helpDesk",
+            "foto": "https://image.flaticon.com/icons/svg/900/900272.svg",
+            "beneficio": ""
+        },
+        {
+            "id": 4,
+            "titulo": "Desenvolvedor Python pleno",
+            "empresa": "Facebook",
+            "descricao": "Atuar com desenvolvimento de aplicações de IA com JS",
+            "requisitos": [
+                "Python",
+                "Panda",
+                "IA"
+            ],
+            "salario": "1.000",
+            "contrato": "Estágio",
+            "linguagem": "Python",
+            "foto": "https://image.flaticon.com/icons/svg/1822/1822899.svg",
+            "beneficio": ""
+        }
+    ],
+    "pfs": [{
+            "id": 1,
+            "nome": "Rafael Amorim",
+            "email": "rafa",
+            "senha": 1,
+            "foto": "http://horadobico.com/wp-content/uploads/2014/06/chimbinha.jpg",
+            "candidaturas": [],
+            "sobre": "Profissional com muita experiencia em varias coisas"
+        },
+        {
+            "id": 2,
+            "nome": "Luiz do Quatar",
+            "email": "l",
+            "senha": 1,
+            "foto": "http://pm1.narvii.com/6270/2423d68171a91d41a4ef446581c171b37a131d3a_00.jpg",
+            "candidaturas": [],
+            "sobre": "Esse cara sabe muito de várias coisas"
+        },
+        {
+            "id": 3,
+            "nome": "Douglas Horh",
+            "email": "d",
+            "senha": 1,
+            "foto": "https://img.quizur.com/f/img5e095859037646.91452497.png?lastEdited=1577670783",
+            "candidaturas": [],
+            "sobre": "Fã do Felipe Neto sabe muito de JS e gosta de assitir vingadores pelado"
+        },
+        {
+            "candidaturas": [],
+            "nome": "curupira",
+            "email": "cu",
+            "senha": "1",
+            "foto": "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/protetor-da-floresta.jpg",
+            "sobre": "asdasdasdasdasdasdasdasd",
+            "id": 4
+        }
+    ],
+    "pjs": [{
+            "nome": "Iteris",
+            "email": "i",
+            "senha": "1",
+            "vagas": [
+                1,
+                3
+            ],
+            "foto": "https://media.licdn.com/dms/image/C4E0BAQE6hGy74ohx8w/company-logo_200_200/0?e=2159024400&v=beta&t=TDGWuPEU5Y5l0kf62R0OVwldw67aoHo7Te5hJg__PlQ",
+            "slogan": "a softaware company"
+        },
+        {
+            "nome": "Google",
+            "email": "g",
+            "senha": "1",
+            "vagas": [
+                2
+            ],
+            "foto": "https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png",
+            "slogan": "Google é brabo, pergunta aqui que a gente sabe"
+        },
+        {
+            "nome": "Facebook",
+            "email": "f",
+            "senha": "1",
+            "vagas": [
+                4
+            ],
+            "foto": "https://www.facebook.com/images/fb_icon_325x325.png",
+            "slogan": "Facezão, vem perder tempo com a gente!"
+        }
+    ]
 }
