@@ -3,10 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { VagasListComponent } from './vagas/vagas-list/vagas-list.component';
 import { LoginComponent } from './inicio/login/login.component';
 import { GuardasService } from './guardas/guardas.service';
+import { GuardaDeslogadorService } from './guardas/guarda-deslogador.service';
 
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
+  {path: '', component: LoginComponent, canActivate: [GuardaDeslogadorService]},
   {path: 'vagas', component: VagasListComponent, canActivate: [GuardasService]}
 ];
 
