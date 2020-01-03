@@ -1,4 +1,4 @@
-import { vagasModel } from '../../vagasModel';
+import { VagaModel } from "../../../store/vagas-model";
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-@Input() vagaModel:vagasModel
+@Input() vagaModel:VagaModel;
   constructor() { }
 
   ngOnInit() {

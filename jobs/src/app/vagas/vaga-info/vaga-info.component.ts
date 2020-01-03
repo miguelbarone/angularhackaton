@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VagasListService } from '../vagas-list.service';
+import { VagaService } from "../../Services/vaga.service";
 
 @Component({
   selector: 'app-vaga-info',
@@ -8,7 +8,7 @@ import { VagasListService } from '../vagas-list.service';
 })
 export class VagaInfoComponent implements OnInit {
 
-  constructor(private vs: VagasListService) { }
+  constructor(private vs: VagaService) { }
 
   ngOnInit() {
   }

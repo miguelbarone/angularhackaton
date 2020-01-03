@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from 'src/app/store/store.service';
-import { VagasListService } from '../vagas-list.service';
+import { VagaService } from "../../Services/vaga.service";
 
 @Component({
   selector: 'app-vagas-list',
@@ -9,7 +9,7 @@ import { VagasListService } from '../vagas-list.service';
 })
 export class VagasListComponent implements OnInit {
 
-  constructor(private store: StoreService, private vs: VagasListService) { }
+  constructor(private store: StoreService, private vs: VagaService) { }
 
   ngOnInit() {
   }

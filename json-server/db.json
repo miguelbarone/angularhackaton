@@ -17,7 +17,8 @@
             "requisitos": ["JS", "HTML", "Nodejs", "React"],
             "salario": "7.000",
             "contrato": "PJ",
-            "linguagem": "JS"
+            "linguagem": "JS",
+            "foto": ""
         },
         {
             "id": 3,
@@ -27,7 +28,8 @@
             "requisitos": ["HD", "RAM", "Gabinetes", "Manutenção"],
             "salario": "3.000",
             "contrato": "Trainee",
-            "linguagem": "helpDesk"
+            "linguagem": "helpDesk",
+            "foto": ""
         },
         {
             "id": 4,
@@ -37,7 +39,8 @@
             "requisitos": ["Python", "Panda", "IA"],
             "salario": "1.000",
             "contrato": "Estágio",
-            "linguagem": "Python"
+            "linguagem": "Python",
+            "foto": ""
         }
 
     ],
