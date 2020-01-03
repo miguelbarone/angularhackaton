@@ -53,16 +53,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a (click)="teste()" id="userL" class="nav-item" routerLink='/perfil' routerLinkActive="active">
+                    <a (click)="abrirPerfil()" id="userL" class="nav-item" style="cursor: pointer;">
                         <img id="foto-perfil-header" class="img-fluid" [src]="store.usuario.foto" alt="icon perfil"> {{ store.usuario.nome }}
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a routerLink='/vagas' routerLinkActive="active" class="nav-link">Vagas</a>
-                </li>
-                <li class="nav-item">
-                    <a (click)="irCandidaturas()" class="nav-link" style="cursor: pointer;">Candidaturas</a>
+                    <a (click)="abrirVagas()" class="nav-link" style="cursor: pointer;">Vagas</a>
                 </li>
                 <li class="nav-item">
                     <a (click)="encerrarSessao()" class="nav-link" style="cursor: pointer;">Sair</a>

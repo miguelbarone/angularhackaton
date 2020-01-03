@@ -54,4 +54,14 @@ clickCadastrar(){
   this.router.navigate(['cadastro']);
 }
 
+abrirPerfil(){
+  
+  this.router.navigate(['perfil']);
+  
+}
+
+abrirVagas(){
+  this.router.navigate(['vagas']);
+}
+
 }
