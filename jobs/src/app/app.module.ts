@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VagasModule } from './vagas/vagas.module';
 import { InicioModule } from './inicio/inicio.module';
+import { CadastroModule } from './cadastro/cadastro.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InicioModule } from './inicio/inicio.module';
     UtilModule,
     HttpClientModule,
     VagasModule,
-    InicioModule
+    InicioModule,
+    CadastroModule
   ],
   providers: [],
   bootstrap: [AppComponent]
