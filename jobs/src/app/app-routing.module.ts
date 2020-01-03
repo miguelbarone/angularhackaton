@@ -4,11 +4,13 @@ import { VagasListComponent } from './vagas/vagas-list/vagas-list.component';
 import { LoginComponent } from './inicio/login/login.component';
 import { GuardasService } from './guardas/guardas.service';
 import { GuardaDeslogadorService } from './guardas/guarda-deslogador.service';
+import { VagaInfoComponent } from './vagas/vaga-info/vaga-info.component';
 
 
 const routes: Routes = [
   {path: '', component: LoginComponent, canActivate: [GuardaDeslogadorService]},
-  {path: 'vagas', component: VagasListComponent, canActivate: [GuardasService]}
+  {path: 'vagas', component: VagasListComponent, canActivate: [GuardasService]},
+  {path: 'vaga-info', component: VagaInfoComponent, canActivate: [GuardasService]}
 ];
 
 @NgModule({
