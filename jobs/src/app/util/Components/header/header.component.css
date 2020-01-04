@@ -1,6 +1,11 @@
-header{
+#cabecalho-nav{
 
     background-color: black;
+}
+
+#marmitech{
+    color: aliceblue;
+    
 }
 .navbar-brand img {
     max-width: 150px;
