@@ -3,6 +3,7 @@ import { StoreService } from 'src/app/store/store.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PfModel } from 'src/app/store/pf-model';
+import { PjModel } from 'src/app/store/pj-model';
 
 @Component({
   selector: 'app-header',
@@ -68,6 +69,10 @@ export class HeaderComponent implements OnInit {
 encerrarSessao(){
   this.store.usuarioLogado = false;
   this.store.usuario = new PfModel();
+  
+  this.store.empresaLogada = false;
+  this.store.empresa = new PjModel();
+  
   this.router.navigate(['']);
 }
 

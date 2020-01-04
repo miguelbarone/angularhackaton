@@ -1,4 +1,5 @@
-<header *ngIf="!store.usuarioLogado" class="cabecalho">
+<!--HEADER DE USUARIO OU EMPRESA DESLOGADA-->
+<header *ngIf="!store.usuarioLogado && !store.empresaLogada" class="cabecalho">
     <nav class="navbar navbar-expand-lg " id="cabecalho-nav">
         <a class="navbar-brand"><img src="https://image.flaticon.com/icons/svg/1995/1995485.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,22 +53,38 @@
             </div>
         </div>
     </nav>
-
 </header>
 
-<header *ngIf="store.usuarioLogado" class="cabecalho">
+
+
+
+
+
+
+<!--HEADER DE USUARIO OU EMPRESA LOGADA-->
+<header *ngIf="store.usuarioLogado || store.empresaLogada" class="cabecalho">
     <nav class="navbar navbar-expand-lg" id="cabecalho-nav">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a (click)="abrirPerfil()" id="userL" class="nav-item" style="cursor: pointer;">
-                        <img id="foto-perfil-header" class="img-fluid" [src]="store.usuario.foto" alt="icon perfil"> {{ store.usuario.nome }}
+                    <a *ngIf="store.usuarioLogado" (click)="abrirPerfil()" id="userL" class="nav-item" style="cursor: pointer;">
+                        <img id="foto-perfil-header" class="img-fluid" [src]="store.usuario.foto" alt="icon perfil"> 
+                        {{ store.usuario.nome }}
+                    </a>
+                    <a *ngIf="store.empresaLogada" (click)="abrirPerfil()" id="userL" class="nav-item" style="cursor: pointer;">
+                        <img id="foto-perfil-header" class="img-fluid" [src]="store.empresa.foto" alt="icon perfil"> 
+                        {{ store.empresa.nome }}
                     </a>
                 </li>
 
-                <li class="nav-item">
+                <li *ngIf="store.usuarioLogado" class="nav-item">
                     <a (click)="abrirVagas()" class="nav-link" style="cursor: pointer;">Vagas</a>
                 </li>
+                <li *ngIf="store.empresaLogada" class="nav-item">
+                    <a (click)="abrirVagas()" class="nav-link" style="cursor: pointer;">Profissionais</a>
+                </li>
+
+
                 <li class="nav-item">
                     <a (click)="encerrarSessao()" class="nav-link" style="cursor: pointer;">Sair</a>
                 </li>
