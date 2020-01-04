@@ -1,18 +1,18 @@
-<div id="content">
-    <ul class="list-unstyled lista-vagas">
-        <li class="media" *ngFor="let vaga of store.candidaturas">
-            <div class="card mb-3" style="width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-8" style="width: 100%;">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ vaga.titulo }}</h5>
-                            <p class="card-text">{{ vaga.descricao }}</p>
-                            <p class="card-text"><small class="text-muted">{{ vaga.empresa }}</small></p>
-                            <button (click)="desistirVaga(vaga)" type="button" class="btn btn-danger">Desistir</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
+<div class="container">
+  <div class="row">
+    <div class="col-4 mt-2" *ngFor="let vaga of store.candidaturas">
+      <div class="card lista-vagas">
+        <div class="card-body">
+          <h5 class="card-title">{{ vaga.titulo }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ vaga.empresa }}</h6>
+          <p class="card-text">{{ vaga.descricao }}</p>
+          <div class="separaButton">
+            <button (click)="desistirVaga(vaga)" type="button" class="btn btn-danger">Desistir</button>
+            <a class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
