@@ -9,7 +9,7 @@
                 </div>
                 <ul class="list-group list-group-flush ">
                     <li class="list-group-item ">Email: {{ store.usuario.email }}</li>
-                    <li class="list-group-item " style="cursor: pointer">Minhas candidaturas</li>
+                    <li (click)="abrirCandidaturas()" class="list-group-item " style="cursor: pointer">Minhas candidaturas</li>
                 </ul>
             </div>
         </section>
