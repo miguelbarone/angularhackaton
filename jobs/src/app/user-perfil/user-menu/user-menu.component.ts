@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./user-menu.component.css']
 })
 export class UserMenuComponent implements OnInit {
-  
+
  constructor(private store: StoreService, private router: Router) {
    }
 
@@ -17,7 +17,10 @@ export class UserMenuComponent implements OnInit {
 
   abrirCandidaturas(){
     this.store.preencherCandidaturas();
-    this.router.navigate(['candidaturas']);
+    this.router.navigate(['perfil/candidaturas']);
+  }
+  abrirPerfil(){
+    this.router.navigate(['perfil']);
   }
 
 }

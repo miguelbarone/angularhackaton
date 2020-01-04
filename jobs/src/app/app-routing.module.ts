@@ -1,5 +1,6 @@
+import { UserEditFormComponent } from './user-perfil/user-edit-form/user-edit-form.component';
 import { UserContainerComponent } from './user-perfil/user-container/user-container.component';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { VagasListComponent } from './vagas/vagas-list/vagas-list.component';
 import { LoginComponent } from './inicio/login/login.component';
@@ -15,7 +16,10 @@ const routes: Routes = [
   {path: 'vagas', component: VagasListComponent, canActivate: [GuardasService]},
   {path: 'vaga-info', component: VagaInfoComponent},
   {path: 'cadastro', component: TelaCadastroComponent},
-  {path: 'perfil', component: UserContainerComponent, canActivate: [GuardasService]},
+  {path: 'perfil', component: UserContainerComponent, canActivate: [GuardasService], children:[
+    {path: '', component: UserEditFormComponent},
+    {path: 'candidaturas', component: CandidaturasComponent}
+  ]},
   {path: 'candidaturas', component: CandidaturasComponent, canActivate: [GuardasService]}
 ];
 

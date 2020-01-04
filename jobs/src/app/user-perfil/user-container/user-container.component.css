@@ -1,12 +1,14 @@
-#tela-perfil {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
+#tela-perfil{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
 }
 
-app-user-edit-form {
-    width: 80%;
-    margin-left: 5%;
+.menu {
+  width: 25%;
+}
+.content {
+  width: 75%;
 }
