@@ -71,7 +71,7 @@
                         <img id="foto-perfil-header" class="img-fluid" [src]="store.usuario.foto" alt="icon perfil"> 
                         {{ store.usuario.nome }}
                     </a>
-                    <a *ngIf="store.empresaLogada" (click)="abrirPerfil()" id="userL" class="nav-item" style="cursor: pointer;">
+                    <a *ngIf="store.empresaLogada" (click)="abrirPerfilEmpresa()" id="userL" class="nav-item" style="cursor: pointer;">
                         <img id="foto-perfil-header" class="img-fluid" [src]="store.empresa.foto" alt="icon perfil"> 
                         {{ store.empresa.nome }}
                     </a>

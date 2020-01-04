@@ -81,9 +81,10 @@ clickCadastrar(){
 }
 
 abrirPerfil(){
-  
   this.router.navigate(['perfil']);
-  
+}
+abrirPerfilEmpresa(){
+  this.router.navigate(['perfil-empresa']);
 }
 
 abrirVagas(){
@@ -93,6 +94,7 @@ abrirProfissionais(){
   this.router.navigate(['profissionais']);
 }
 
+//muda o tipo de login que será feito, pf ou pj
 tipoLogin(s){
   this.tipo = s;
 }

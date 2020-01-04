@@ -1,0 +1,15 @@
+<section class="perfil-empresa">
+    <div class="card">
+      <img [src]="store.empresa.foto" class=" card-img-top " alt="... ">
+      <div class="card-body ">
+        <h5 class="card-title ">{{ store.empresa.nome }}</h5>
+        <p class="card-text ">{{ store.empresa.slogan }}</p>
+      </div>
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item ">Email: {{ store.empresa.email }}</li>
+        <li class="list-group-item " style="cursor: pointer">Minhas candidaturas</li>
+        <li class="list-group-item " style="cursor: pointer">Abrir Perfil</li>
+      </ul>
+    </div>
+  </section>
+  

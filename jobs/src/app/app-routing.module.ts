@@ -10,6 +10,7 @@ import { VagaInfoComponent } from './vagas/vaga-info/vaga-info.component';
 import { TelaCadastroComponent } from './cadastro/tela-cadastro/tela-cadastro.component';
 import { CandidaturasComponent } from './user-perfil/candidaturas/candidaturas.component';
 import { ProfissionaisListComponent } from './empresa/profissionais-list/profissionais-list.component';
+import { PerfilEmpresaComponent } from './empresa/perfil-empresa/perfil-empresa.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
     {path: 'candidaturas', component: CandidaturasComponent}
   ]},
   {path: 'candidaturas', component: CandidaturasComponent, canActivate: [GuardasService]},
-  {path: 'profissionais', component: ProfissionaisListComponent}
+  {path: 'profissionais', component: ProfissionaisListComponent},
+  {path: 'perfil-empresa', component: PerfilEmpresaComponent}
 ];
 
 @NgModule({
