@@ -16,6 +16,7 @@ export class StoreService implements OnInit {
   vaga: VagaModel;
   pfs: Array<PfModel> = [];
   vagas: Array<VagaModel> = [];
+  candidaturas: Array<VagaModel> = [];
 
   constructor(private http: HttpClient) {
     this.buscarPfs();
@@ -46,12 +47,24 @@ export class StoreService implements OnInit {
     });
   }
   //adicionar usuario Pf
-      addPf(user: PfModel): Observable<any> {
-     return this.http.post("http://localhost:3000/pfs",user)
+  addPf(user: PfModel): Observable<any> {
+    return this.http.post("http://localhost:3000/pfs",user);
   }
 
+  //atualiza dados da pf
   atualizarPf(atualizacao: PfModel, id): Observable<PfModel>{
     return this.http.put<PfModel>("http://localhost:3000/pfs/" + id, atualizacao);
+  }
+
+  //metodo não faz requisição, apenas com dados existentes na store ele mina as candidaturas do user logado
+  preencherCandidaturas(){
+    this.usuario.candidaturas.forEach(candidatura => {
+      this.vagas.forEach(vaga => {
+        if(vaga.id == candidatura){
+          this.candidaturas.push(vaga);
+        }
+      })
+    })
   }
 
 

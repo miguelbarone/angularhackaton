@@ -16,6 +16,7 @@ export class UserMenuComponent implements OnInit {
   }
 
   abrirCandidaturas(){
+    this.store.preencherCandidaturas();
     this.router.navigate(['candidaturas']);
   }
 
