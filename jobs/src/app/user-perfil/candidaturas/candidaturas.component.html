@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-4 mt-2" *ngFor="let vaga of store.candidaturas">
+    <div class="col-5 mt-2" *ngFor="let vaga of store.candidaturas">
       <div class="card lista-vagas">
         <div class="card-body">
           <h5 class="card-title">{{ vaga.titulo }}</h5>
@@ -8,7 +8,9 @@
           <p class="card-text">{{ vaga.descricao }}</p>
           <div class="separaButton">
             <button (click)="desistirVaga(vaga)" type="button" class="btn btn-danger">Desistir</button>
-            <a class="card-link">Another link</a>
+            <div class="alert alert-warning" role="alert">
+              Em avaliação
+            </div>
           </div>
         </div>
       </div>
