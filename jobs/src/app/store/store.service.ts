@@ -58,6 +58,7 @@ export class StoreService implements OnInit {
 
   //metodo não faz requisição, apenas com dados existentes na store ele mina as candidaturas do user logado
   preencherCandidaturas(){
+    this.candidaturas = [];
     this.usuario.candidaturas.forEach(candidatura => {
       this.vagas.forEach(vaga => {
         if(vaga.id == candidatura){
