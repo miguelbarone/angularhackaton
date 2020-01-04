@@ -18,24 +18,25 @@ export class VagasListComponent implements OnInit {
   tipoContrato:string = "";
   tecnologia:string = "";
 
-  constructor(private store: StoreService, private vs: VagaService, private ss: SearchService) { 
-    
+  constructor(private store: StoreService, private vs: VagaService, private ss: SearchService) {
+
   }
 
   ngOnInit() {
+
   }
 
   filtrar(){
 
     if(this.tipoContrato != "" && this.tecnologia != ""){
       this.vagas = this.ss.filtrarPorContratoETecnologia(this.tecnologia, this.tipoContrato);
-      
+
     }else{
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Preencha os dois filtros',
-        footer: '<a href>Why do I have this issue?</a>'
+        text: 'Preencha os dois filtros'
+        //footer: '<a href>Why do I have this issue?</a>'
       });
     }
 
@@ -47,8 +48,8 @@ export class VagasListComponent implements OnInit {
       imageHeight: 200,
       imageAlt: 'Custom image',
     });
-    
-  
+
+
   }
 
 }

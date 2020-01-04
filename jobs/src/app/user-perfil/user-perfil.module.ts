@@ -5,6 +5,7 @@ import { UserEditFormComponent } from './user-edit-form/user-edit-form.component
 import { CandidaturasComponent } from './candidaturas/candidaturas.component';
 import { UserMenuComponent } from './user-menu/user-menu.component';
 import { UserContainerComponent } from './user-container/user-container.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { UserContainerComponent } from './user-container/user-container.componen
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   exports: [UserEditFormComponent, CandidaturasComponent, UserMenuComponent, UserContainerComponent],
 })
