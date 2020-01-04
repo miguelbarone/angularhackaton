@@ -38,9 +38,9 @@
               <small *ngIf="formEdicao.get('foto').errors?.required" class="form-text text-muted">Campo obrigatório</small>
           </div>
           <div class="form-group">
-              <label>Sobre</label>
-              <input formControlName="sobre" type="text" class="form-control" aria-describedby="emailHelp">
-              <small *ngIf="formEdicao.get('sobre').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+              <label>Slogan</label>
+              <input formControlName="slogan" type="text" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formEdicao.get('slogan').errors?.required" class="form-text text-muted">Campo obrigatório</small>
           </div>
           <button type="submit" [disabled]="formEdicao.invalid" class="btn btn-primary">Atualizar</button>
       </form>

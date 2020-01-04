@@ -83,5 +83,9 @@ export class StoreService implements OnInit {
     })
   }
 
+  atualizarPj(atualizacao, id){
+    return this.http.put<PjModel>("http://localhost:3000/pjs/" + id, atualizacao);
+  }
+
 
 }
