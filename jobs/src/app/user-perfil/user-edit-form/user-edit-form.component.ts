@@ -27,6 +27,7 @@ export class UserEditFormComponent implements OnInit {
   atualizar(){
     let atualizacao = new PfModel();
     let id = this.store.usuario.id;
+    atualizacao.id = id;
     atualizacao.nome = this.formEdicao.get("nome").value;
     atualizacao.email = this.formEdicao.get("email").value;
     atualizacao.senha = this.formEdicao.get("senha").value;
@@ -38,6 +39,7 @@ export class UserEditFormComponent implements OnInit {
     
     this.store.atualizarPf(atualizacao, id).subscribe(res => {
       alert("Usuario atualizado");
+      this.store.usuario = atualizacao;
       this.store.buscarPfs();
     });
   }

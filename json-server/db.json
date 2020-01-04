@@ -73,12 +73,12 @@
       "candidaturas": [
         1
       ],
+      "id": 1,
       "nome": "Rafael Amorim",
       "email": "rafa",
       "senha": 1,
       "foto": "http://horadobico.com/wp-content/uploads/2014/06/chimbinha.jpg",
-      "sobre": "Profissional com muita experiencia em varias coisass",
-      "id": 1
+      "sobre": "Profissional com muita experiencia em varias coisass"
     },
     {
       "id": 2,
