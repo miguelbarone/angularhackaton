@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
 
   loginForm: FormGroup;
   usuario: PfModel;
+  tipo: string = "pf";
 
   constructor(private store: StoreService, private fb: FormBuilder, private router: Router) { 
     this.usuario = store.usuario;
@@ -31,17 +32,21 @@ export class HeaderComponent implements OnInit {
     let email = this.loginForm.get("email").value;
     let senha = this.loginForm.get("senha").value;
 
-    this.store.pfs.forEach(pf => {
-      if(email == pf.email && senha == pf.senha){
-        this.store.usuario = pf;
-        this.store.usuarioLogado = true;
-        this.router.navigate(['vagas']);
+    if(this.tipo == "pf"){
+      this.store.pfs.forEach(pf => {
+        if(email == pf.email && senha == pf.senha){
+          this.store.usuario = pf;
+          this.store.usuarioLogado = true;
+          this.router.navigate(['vagas']);
+        }
+      })
+  
+      if(!this.store.usuarioLogado){
+        this.store.usuarioLogado = false;
+        alert("dados incorretos")
       }
-    })
-
-    if(!this.store.usuarioLogado){
-      this.store.usuarioLogado = false;
-      alert("dados incorretos")
+    }else if(this.tipo == "pj"){
+      alert("login pj")
     }
   }
 
@@ -63,6 +68,10 @@ abrirPerfil(){
 
 abrirVagas(){
   this.router.navigate(['vagas']);
+}
+
+tipoLogin(s){
+  this.tipo = s;
 }
 
 }
