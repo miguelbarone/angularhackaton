@@ -14,49 +14,38 @@ export class SearchService {
     this.vagas = service.vagas;
    }
 
-   filtrarPorContrato(TipoContrato: string): Array<VagaModel> {
-
-    this.vagasFiltradas = [];
-
-    for (let index = 0; index < this.vagas.length; index++) {
-        
-        if (TipoContrato == this.vagas[index].contrato) {
-            
-            this.vagasFiltradas.push(this.vagas[index]);
-        }
-        
-    }
-
-    console.log(this.vagasFiltradas);
-    return this.vagasFiltradas;
-}
-
-filtrarPorTecnologia(TipoTecnologia: string){
-    this.vagasFiltradas = [];
-
-    for (let index = 0; index < this.vagas.length; index++) {
-        if (TipoTecnologia == this.vagas[index].linguagem) {
-            this.vagasFiltradas.push(this.vagas[index]);
-        }  
-    }
-    console.log(this.vagasFiltradas);
-    return this.vagasFiltradas;
-}
 
 filtrarPorContratoETecnologia(TipoTecnologia: string, TipoContrato: string){
     this.vagasFiltradas = [];
 
     for (let index = 0; index < this.vagas.length; index++) {
         if (TipoTecnologia === this.vagas[index].linguagem && TipoContrato === this.vagas[index].contrato ) {
-            this.vagasFiltradas.push(this.vagas[index]);
+            
+           // if (this.naoExisteElementoRepetido(this.vagas[index].linguagem,this.vagas[index].contrato )) {
+
+                this.vagasFiltradas.push(this.vagas[index]);
+           // }
+           
         }  
     }
     console.log(this.vagasFiltradas);
     return this.vagasFiltradas;
 }
 
-filtrarPorSalrário(){
+    //naoExisteElementoRepetido(TipoTecnologia: string, TipoContrato: string): boolean{
 
+      //  for (let index = 0; index < this.vagasFiltradas.length; index++) {
+            
+         //   if (TipoTecnologia === this.vagasFiltradas[index].linguagem || TipoContrato === this.vagasFiltradas[index].contrato) {
 
-}
+          //      return false;
+          //  } else {
+                
+           //     return true;
+          //  }
+       // }
+
+   // }
+
+    
 }
