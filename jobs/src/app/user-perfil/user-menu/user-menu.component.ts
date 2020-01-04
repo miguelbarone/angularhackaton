@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from 'src/app/store/store.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-menu',
@@ -7,12 +8,16 @@ import { StoreService } from 'src/app/store/store.service';
   styleUrls: ['./user-menu.component.css']
 })
 export class UserMenuComponent implements OnInit {
- menuList = [{"nome":"Editar Perfil","link":"#"},{"nome":"Candidatura","link":"#"},{"nome":"Dicas","link":"#"},]
   
- constructor(private store: StoreService) {
+ constructor(private store: StoreService, private router: Router) {
    }
 
   ngOnInit() {
+  }
+
+  abrirCandidaturas(){
+    this.store.preencherCandidaturas();
+    this.router.navigate(['candidaturas']);
   }
 
 }
