@@ -11,6 +11,7 @@ import { TelaCadastroComponent } from './cadastro/tela-cadastro/tela-cadastro.co
 import { CandidaturasComponent } from './user-perfil/candidaturas/candidaturas.component';
 import { ProfissionaisListComponent } from './empresa/profissionais-list/profissionais-list.component';
 import { PerfilEmpresaComponent } from './empresa/perfil-empresa/perfil-empresa.component';
+import { GuardaEmpresaService } from './guardas/guarda-empresa.service';
 
 
 const routes: Routes = [
@@ -23,8 +24,8 @@ const routes: Routes = [
     {path: 'candidaturas', component: CandidaturasComponent}
   ]},
   {path: 'candidaturas', component: CandidaturasComponent, canActivate: [GuardasService]},
-  {path: 'profissionais', component: ProfissionaisListComponent},
-  {path: 'perfil-empresa', component: PerfilEmpresaComponent}
+  {path: 'profissionais', component: ProfissionaisListComponent, canActivate: [GuardaEmpresaService]},
+  {path: 'perfil-empresa', component: PerfilEmpresaComponent, canActivate: [GuardaEmpresaService]}
 ];
 
 @NgModule({
