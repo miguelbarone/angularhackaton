@@ -89,6 +89,9 @@ abrirPerfil(){
 abrirVagas(){
   this.router.navigate(['vagas']);
 }
+abrirProfissionais(){
+  this.router.navigate(['profissionais']);
+}
 
 tipoLogin(s){
   this.tipo = s;

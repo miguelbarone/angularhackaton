@@ -9,6 +9,7 @@ import { GuardaDeslogadorService } from './guardas/guarda-deslogador.service';
 import { VagaInfoComponent } from './vagas/vaga-info/vaga-info.component';
 import { TelaCadastroComponent } from './cadastro/tela-cadastro/tela-cadastro.component';
 import { CandidaturasComponent } from './user-perfil/candidaturas/candidaturas.component';
+import { ProfissionaisListComponent } from './empresa/profissionais-list/profissionais-list.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
     {path: '', component: UserEditFormComponent},
     {path: 'candidaturas', component: CandidaturasComponent}
   ]},
-  {path: 'candidaturas', component: CandidaturasComponent, canActivate: [GuardasService]}
+  {path: 'candidaturas', component: CandidaturasComponent, canActivate: [GuardasService]},
+  {path: 'profissionais', component: ProfissionaisListComponent}
 ];
 
 @NgModule({
