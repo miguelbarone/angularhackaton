@@ -6,6 +6,6 @@
         <p class="lead">{{ vs.vagaClicada.titulo }}</p>
         <p>{{ vs.vagaClicada.descricao }}</p>
         <p>Salário R${{ vs.vagaClicada.salario }}</p>
-        <a class="btn btn-primary btn-lg" style="color: aliceblue;" role="button">Candidatar-se</a>
+        <a *ngIf="store.usuarioLogado" (click)="candidatar(vs.vagaClicada.id)" class="btn btn-primary btn-lg" style="color: aliceblue;" role="button">Candidatar-se</a>
     </div>
 </div>

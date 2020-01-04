@@ -70,7 +70,9 @@
   ],
   "pfs": [
     {
-      "candidaturas": [],
+      "candidaturas": [
+        1
+      ],
       "nome": "Rafael Amorim",
       "email": "rafa",
       "senha": 1,
