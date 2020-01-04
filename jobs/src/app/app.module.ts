@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VagasModule } from './vagas/vagas.module';
 import { InicioModule } from './inicio/inicio.module';
 import { CadastroModule } from './cadastro/cadastro.module';
+import { EmpresaModule } from './empresa/empresa.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CadastroModule } from './cadastro/cadastro.module';
     VagasModule,
     InicioModule,
     UserPerfilModule,
-    CadastroModule
+    CadastroModule,
+    EmpresaModule
 
   ],
   providers: [],

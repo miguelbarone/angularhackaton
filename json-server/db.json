@@ -71,7 +71,7 @@
   "pfs": [
     {
       "candidaturas": [
-        1
+        2
       ],
       "id": 1,
       "nome": "Rafael Amorim",
@@ -110,6 +110,7 @@
   ],
   "pjs": [
     {
+      "id": 1,
       "nome": "Iteris",
       "email": "i",
       "senha": "1",
@@ -121,16 +122,16 @@
       "slogan": "a softaware company"
     },
     {
-      "nome": "Google",
+      "vagas": [],
+      "id": 2,
+      "nome": "Googlea",
       "email": "g",
       "senha": "1",
-      "vagas": [
-        2
-      ],
       "foto": "https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png",
       "slogan": "Google é brabo, pergunta aqui que a gente sabe"
     },
     {
+      "id": 3,
       "nome": "Facebook",
       "email": "f",
       "senha": "1",

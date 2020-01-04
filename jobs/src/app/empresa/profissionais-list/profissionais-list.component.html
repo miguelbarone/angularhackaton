@@ -1,0 +1,17 @@
+<div id="content">
+    <ul class="list-unstyled lista-vagas">
+        <li class="media" *ngFor="let vaga of store.pfs"  style="cursor: pointer;">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-8" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ vaga.nome }}</h5>
+                            <p class="card-text">{{ vaga.sobre }}</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

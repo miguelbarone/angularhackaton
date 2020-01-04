@@ -9,6 +9,9 @@ import { GuardaDeslogadorService } from './guardas/guarda-deslogador.service';
 import { VagaInfoComponent } from './vagas/vaga-info/vaga-info.component';
 import { TelaCadastroComponent } from './cadastro/tela-cadastro/tela-cadastro.component';
 import { CandidaturasComponent } from './user-perfil/candidaturas/candidaturas.component';
+import { ProfissionaisListComponent } from './empresa/profissionais-list/profissionais-list.component';
+import { PerfilEmpresaComponent } from './empresa/perfil-empresa/perfil-empresa.component';
+import { GuardaEmpresaService } from './guardas/guarda-empresa.service';
 
 
 const routes: Routes = [
@@ -20,7 +23,9 @@ const routes: Routes = [
     {path: '', component: UserEditFormComponent},
     {path: 'candidaturas', component: CandidaturasComponent}
   ]},
-  {path: 'candidaturas', component: CandidaturasComponent, canActivate: [GuardasService]}
+  {path: 'candidaturas', component: CandidaturasComponent, canActivate: [GuardasService]},
+  {path: 'profissionais', component: ProfissionaisListComponent, canActivate: [GuardaEmpresaService]},
+  {path: 'perfil-empresa', component: PerfilEmpresaComponent, canActivate: [GuardaEmpresaService]}
 ];
 
 @NgModule({

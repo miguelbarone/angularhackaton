@@ -1,3 +1,9 @@
+.tipo {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2%;
+    display: flex;
+}
 #cabecalho-nav{
 
     background-color: black;
