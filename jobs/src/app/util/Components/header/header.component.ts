@@ -26,13 +26,14 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-  //loga o usuario e armazena sua informação em 'usuario', da classe store
+  //loga o usuario ou empresa e armazena sua informação em store
   login(){
 
     let email = this.loginForm.get("email").value;
     let senha = this.loginForm.get("senha").value;
 
     if(this.tipo == "pf"){
+
       this.store.pfs.forEach(pf => {
         if(email == pf.email && senha == pf.senha){
           this.store.usuario = pf;
@@ -45,9 +46,23 @@ export class HeaderComponent implements OnInit {
         this.store.usuarioLogado = false;
         alert("dados incorretos")
       }
+
     }else if(this.tipo == "pj"){
-      alert("login pj")
+      
+      this.store.pjs.forEach(pj => {
+        if(email == pj.email && senha == pj.senha){
+          this.store.empresa = pj;
+          this.store.empresaLogada = true;
+          this.router.navigate(['vagas']);
+        }
+      })
+  
+      if(!this.store.empresaLogada){
+        this.store.empresaLogada = false;
+        alert("dados incorretos")
+      }
     }
+
   }
 
 encerrarSessao(){
