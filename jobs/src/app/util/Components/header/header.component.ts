@@ -75,6 +75,9 @@ encerrarSessao(){
   
   this.router.navigate(['']);
 }
+voltarTela(){
+  this.router.navigate(['']);
+}
 
 clickCadastrar(){
   this.router.navigate(['cadastro']);
