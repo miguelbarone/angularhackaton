@@ -1,7 +1,7 @@
 <!--HEADER DE USUARIO OU EMPRESA DESLOGADA-->
 <header *ngIf="!store.usuarioLogado && !store.empresaLogada" class="cabecalho">
     <nav class="navbar navbar-expand-lg " id="cabecalho-nav">
-        <a class="navbar-brand"><img src="https://image.flaticon.com/icons/svg/1995/1995485.svg"></a>
+        <a class="navbar-brand"><img (click)="voltarTela()" src="/assets/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
